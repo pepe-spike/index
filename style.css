@@ -15,7 +15,7 @@ body {
   font-family: "Times New Roman", Times, serif; 
   font-weight: normal; 
   background-color: white; 
-  font-size: 13px; 
+  font-size: 13px;
   line-height: 15px; 
   color: black;
   text-align: center;
@@ -26,7 +26,7 @@ body {
 
 body.homepage {
     overflow: hidden;
-    padding-top: 0; 
+    padding-top: 0;
 }
 
 ::selection {
@@ -56,7 +56,7 @@ body.homepage {
   margin: 0; 
   
   background-color: transparent; 
-  z-index: 1000; 
+  z-index: 1000;
   color: white; 
   mix-blend-mode: difference; 
   
@@ -85,7 +85,12 @@ body.homepage {
 }
 
 .header-location {
-    margin-top: 0; 
+    margin-top: 0;
+}
+
+/* Gestione visibilità punti di sospensione Mobile */
+.mobile-dots {
+    display: none; /* Nascondi di default su Desktop */
 }
 
 /* ------------------------------------- */
@@ -95,7 +100,7 @@ body.homepage {
 .gallery-container {
   overflow-x: auto; 
   overflow-y: hidden;
-  display: block; 
+  display: block;
 }
 
 .gallery-container.fullscreen {
@@ -107,7 +112,7 @@ body.homepage {
 .image-wrapper {
   display: flex; 
   height: 100%;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .image-slide {
@@ -120,7 +125,7 @@ body.homepage {
 .image-slide img,
 .image-slide video {
   height: 100%; 
-  width: auto; 
+  width: auto;
   display: block;
 }
 
@@ -200,7 +205,7 @@ body.homepage {
 }
 
 .clients > div {
-    flex-basis: 33.33%; 
+    flex-basis: 33.33%;
     flex-grow: 1;
     flex-shrink: 1;
     text-wrap: balance;
@@ -229,11 +234,11 @@ body.homepage {
 
   .header-right {
     text-align: left;
-    margin-top: 10px; 
+    margin-top: 10px;
   }
   
   .gallery-container.fullscreen {
-      height: 100vh; 
+      height: 100vh;
   }
   
   .caption {
@@ -248,7 +253,7 @@ body.homepage {
   }
   .video-overlay {
       display: block; 
-      z-index: 2; 
+      z-index: 2;
   }
 
   .clients {
@@ -257,14 +262,18 @@ body.homepage {
       
       padding-left: 10px;
       padding-right: 10px;
-      max-width: none; 
-      
+      max-width: none;
       padding-top: 170px; 
       margin-left: 0;
       margin-right: 0;
   }
   
   .clients > div {
-      flex-basis: auto; 
+      flex-basis: auto;
+  }
+  
+  /* MOSTRA i puntini sottolineati solo su mobile */
+  .mobile-dots {
+      display: inline;
   }
 }
